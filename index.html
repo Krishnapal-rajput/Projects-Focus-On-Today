@@ -5,35 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus on Today</title>
+
+    <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Link to Poppins font from Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Link to external CSS file for styles -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Link to external JavaScript file, loaded defer to ensure HTML is parsed first -->
     <script src="script.js" defer></script>
   </head>
   <body>
     <main>
+      <!-- Main title of the application -->
       <h1><span class="green-text">Focus on&nbsp;</span>Today</h1>
+
       <div class="app-container">
+        <!-- Subtitle for the current day -->
         <h2>
           Today
           <div class="parent-sun">
+            <!-- Sun icon and additional imagery -->
             <div class="sun-icon"></div>
             <div class="group-img"></div>
           </div>
         </h2>
+
+        <!-- Progress text encouraging goal completion -->
         <p class="progress-text">Raise the bar by completing your goals!</p>
+
+        <!-- Progress bar displaying completion status -->
         <div class="progress-bar">
           <div class="progress"><span>2/3 Completed</span></div>
         </div>
+
+        <!-- Error message container -->
         <div class="error-container">
           <p class="error-text">Please set all three goals!</p>
         </div>
+
+        <!-- Goal input fields -->
         <div class="goal-container">
           <div class="custom-checkbox">
+            <!-- Check icon for completed goals -->
             <img class="check-icon" src="check.svg" alt="checked" />
           </div>
           <input
@@ -43,6 +64,7 @@
             type="text"
           />
         </div>
+
         <div class="goal-container">
           <div class="custom-checkbox">
             <img class="check-icon" src="check.svg" alt="checked" />
@@ -54,6 +76,7 @@
             type="text"
           />
         </div>
+
         <div class="goal-container">
           <div class="custom-checkbox">
             <img class="check-icon" src="check.svg" alt="checked" />
@@ -65,8 +88,12 @@
             type="text"
           />
         </div>
+
+        <!-- Motivational quote -->
         <p class="quote">"Move one step ahead, today!"</p>
-        <p class="footer">Made with❤️ by Krishnapal Rajput</p>
+
+        <!-- Footer with author information -->
+        <p class="footer">Made with ❤️ by Krishnapal Rajput</p>
       </div>
     </main>
   </body>

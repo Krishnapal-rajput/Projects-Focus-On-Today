@@ -1,189 +1,235 @@
+/* Global styles */
 * {
-  box-sizing: border-box;
-}
-body {
-  background-color: rgba(72, 163, 0, 0.07);
-  font-family: "Poppins", sans-serif;
-}
-main {
-  padding: 0 16px 32px;
-}
-h1 {
-  font-size: 64px;
-  text-align: center;
-  color: #61481c;
-}
-h1 .green-text {
-  color: #48a300;
-}
-.app-container {
-  background-color: #fbfbfb;
-  max-width: 660px;
-  margin-inline: auto;
-  border-radius: 15px;
-  padding: 32px 48px;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
-}
-.parent-sun {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-}
-.sun-icon {
-  vertical-align: middle;
-  margin-left: 16px;
-  /* padding-right: 5px; */
-  width: 50px;
-  height: 50px;
-  position: relative;
-  display: inline-block;
-  /* align-items: center;
-  justify-content: center; */
-  background-image: url("sun-face.svg");
-  background-size: cover;
-  animation: rotate 4s linear infinite;
-}
-.group-img {
-  height: 100%; /* Adjust to fit the parent container */
-  width: 100%; /* Adjust to fit the parent container */
-  background-image: url("background-sun.svg"); /* Fixed path syntax */
-  background-repeat: no-repeat;
-  position: absolute;
-  margin-left: 16.5px;
-  top: 0;
-  left: 0;
-  background-position: center;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
+/* Body styles */
+body {
+  background-color: rgba(72, 163, 0, 0.07); /* Light green background */
+  font-family: "Poppins", sans-serif; /* Font family for the entire document */
+}
+
+/* Main section styles */
+main {
+  padding: 0 16px 32px; /* Padding for main content area */
+}
+
+/* Title styles */
+h1 {
+  font-size: 64px; /* Large font size for main title */
+  text-align: center; /* Center the title */
+  color: #61481c; /* Dark brown color for title text */
+}
+
+/* Green text styling within the title */
+h1 .green-text {
+  color: #48a300; /* Green color for the highlighted part of the title */
+}
+
+/* App container styles */
+.app-container {
+  background-color: #fbfbfb; /* Light grey background for the app container */
+  max-width: 660px; /* Maximum width of the container */
+  margin-inline: auto; /* Center the container */
+  border-radius: 15px; /* Rounded corners */
+  padding: 32px 48px; /* Padding inside the container */
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Sun icon positioning */
+.parent-sun {
+  display: inline-block; /* Inline block for proper positioning */
+  width: 50px; /* Width of the sun container */
+  height: 50px; /* Height of the sun container */
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+}
+
+/* Sun icon styles */
+.sun-icon {
+  vertical-align: middle; /* Align icon in the middle */
+  margin-left: 16px; /* Left margin for spacing */
+  width: 50px; /* Width of the sun icon */
+  height: 50px; /* Height of the sun icon */
+  position: relative; /* Relative positioning for child elements */
+  display: inline-block; /* Inline block for positioning */
+  background-image: url("sun-face.svg"); /* Background image for the sun icon */
+  background-size: cover; /* Cover the entire area with the image */
+  animation: rotate 4s linear infinite; /* Rotation animation */
+}
+
+/* Group image styling */
+.group-img {
+  height: 100%; /* Full height of the parent container */
+  width: 100%; /* Full width of the parent container */
+  background-image: url("background-sun.svg"); /* Background image for the sun group */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  position: absolute; /* Position absolutely within the parent */
+  margin-left: 16.5px; /* Adjusted left margin for alignment */
+  top: 0; /* Position at the top */
+  left: 0; /* Position on the left */
+  background-position: center; /* Center the background image */
+}
+
+/* Progress text styling */
 .progress-text {
-  font-size: 14px;
-  color: #858585;
-  margin-bottom: 20px;
+  font-size: 14px; /* Font size for progress text */
+  color: #858585; /* Grey color for the text */
+  margin-bottom: 20px; /* Space below the progress text */
 }
+
+/* Progress bar styling */
 .progress-bar {
-  height: 30px;
-  background-color: rgba(72, 163, 0, 0.1);
-  border-radius: 15px;
+  height: 30px; /* Height of the progress bar */
+  background-color: rgba(72, 163, 0, 0.1); /* Light green background */
+  border-radius: 15px; /* Rounded corners */
 }
+
+/* Progress fill styling */
 .progress {
-  height: 100%;
-  background-color: #48a300;
-  border-radius: 15px;
-  width: 0%;
-  font-weight: 500;
-  font-size: 10px;
-  color: #eeffe0;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  transition: width 0.2s ease-in-out;
+  height: 100%; /* Full height of the progress bar */
+  background-color: #48a300; /* Darker green for progress fill */
+  border-radius: 15px; /* Rounded corners */
+  width: 0%; /* Initial width, to be set dynamically */
+  font-weight: 500; /* Medium font weight */
+  font-size: 10px; /* Small font size */
+  color: #eeffe0; /* Light green text color */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center align items vertically */
+  overflow: hidden; /* Hide overflow content */
+  transition: width 0.2s ease-in-out; /* Smooth transition for width change */
 }
+
+/* Progress span styling */
 .progress span {
-  padding-left: 20px;
-  min-width: max-content;
+  padding-left: 20px; /* Left padding for text */
+  min-width: max-content; /* Prevent text wrapping */
 }
+
+/* Error message container */
 .error-container {
-  height: 48px;
+  height: 48px; /* Fixed height for error container */
 }
+
+/* Error text styling */
 .error-text {
-  color: #ff5151;
-  height: auto;
-  font-size: 12px;
-  /* margin-bottom: 20px; */
-  margin: 0;
-  padding-top: 4px;
-  display: none;
+  color: #ff5151; /* Red color for error messages */
+  height: auto; /* Auto height */
+  font-size: 12px; /* Small font size */
+  margin: 0; /* No margin */
+  padding-top: 4px; /* Padding above */
+  display: none; /* Hidden by default */
 }
+
+/* Show error message when error-show class is added */
 .error-show {
-  display: block;
+  display: block; /* Show error message */
 }
+
+/* Goal container styling */
 .goal-container {
-  height: 82px;
-  border-radius: 17px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  padding: 0 22px;
-  background-color: #fff;
-  margin-bottom: 48px;
-  /* margin-top: 48px; */
+  height: 82px; /* Height of each goal container */
+  border-radius: 17px; /* Rounded corners */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center align items */
+  padding: 0 22px; /* Padding inside the container */
+  background-color: #fff; /* White background */
+  margin-bottom: 48px; /* Space below each goal container */
 }
+
+/* Custom checkbox styling */
 .custom-checkbox {
-  width: 24px;
-  height: 24px;
-  border: 2px solid rgba(97, 72, 28, 0.3);
-  border-radius: 50%;
-  flex-shrink: 0;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 24px; /* Width of the checkbox */
+  height: 24px; /* Height of the checkbox */
+  border: 2px solid rgba(97, 72, 28, 0.3); /* Light border for checkbox */
+  border-radius: 50%; /* Round shape */
+  flex-shrink: 0; /* Prevent shrinking */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center align content */
 }
+
+/* Styles when the goal is completed */
 .completed .custom-checkbox {
-  background-color: #48a300;
-  border-color: #48a300;
-  /* background-image: url(""); */
+  background-color: #48a300; /* Green background for completed checkbox */
+  border-color: #48a300; /* Match border color */
 }
+
+/* Check icon visibility when goal is completed */
 .completed .check-icon {
-  display: block;
+  display: block; /* Show check icon */
 }
+
+/* Strikethrough styling for completed goal input */
 .completed .goal-input {
-  color: #48a300;
-  text-decoration: line-through;
+  color: #48a300; /* Change text color to green */
+  text-decoration: line-through; /* Strikethrough text */
 }
+
+/* Input field styling */
 input {
-  padding: 22px;
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  width: 100%;
-  align-self: stretch;
+  padding: 22px; /* Padding inside input field */
+  font-family: inherit; /* Inherit font from parent */
+  font-size: 16px; /* Font size for input text */
+  border: none; /* No border */
+  outline: none; /* No outline */
+  width: 100%; /* Full width */
+  align-self: stretch; /* Stretch to fill container */
 }
+
+/* Placeholder text styling */
 input::placeholder {
-  color: #d9d9d9;
+  color: #d9d9d9; /* Light grey for placeholder text */
 }
+
+/* Quote styling */
 .quote {
-  margin-top: 10px;
-  font-weight: 500;
-  text-align: center;
+  margin-top: 10px; /* Space above the quote */
+  font-weight: 500; /* Medium font weight */
+  text-align: center; /* Center align the quote */
 }
+
+/* Footer styling */
 .footer {
-  font-size: 10px;
-  font-weight: 500;
-  text-align: center;
-  color: #858585;
-  margin-top: 64px;
+  font-size: 10px; /* Small font size */
+  font-weight: 500; /* Medium font weight */
+  text-align: center; /* Center align footer text */
+  color: #858585; /* Grey color for footer */
+  margin-top: 64px; /* Space above the footer */
 }
+
+/* Keyframes for rotating animation */
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start at 0 degrees */
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Rotate to 360 degrees */
   }
 }
+
+/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   h1 {
-    font-size: 32px;
+    font-size: 32px; /* Smaller font size for title */
   }
   .app-container {
-    padding: 16px 24px;
+    padding: 16px 24px; /* Reduced padding for smaller screens */
   }
   .goal-container {
-    height: 64px;
-    margin-bottom: 24px;
-    border-radius: 15px;
+    height: 64px; /* Reduced height for goal containers */
+    margin-bottom: 24px; /* Reduced space below each goal container */
+    border-radius: 15px; /* Adjusted rounded corners */
   }
   .custom-checkbox {
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Smaller checkbox size */
+    height: 20px; /* Smaller checkbox height */
   }
   .footer {
-    margin-top: 32px;
+    margin-top: 32px; /* Reduced space above the footer */
   }
   .progress-bar {
-    height: 24px;
+    height: 24px; /* Reduced height for progress bar */
   }
 }
