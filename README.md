@@ -2,7 +2,7 @@
 
 ## Description
 
-"Focus on Today" is a goal-tracking web application designed to help users set, manage, and complete their daily goals. The app offers a user-friendly interface, progress tracking, and motivational quotes to inspire users to stay focused on their tasks.
+"<a href="https://krishnas-focus-on-today.netlify.app/">Focus on Today</a>" is a goal-tracking web application designed to help users set, manage, and complete their daily goals. The app offers a user-friendly interface, progress tracking, and motivational quotes to inspire users to stay focused on their tasks.
 
 ## Features
 
